@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -58,7 +59,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portfolio3.jpg");
       border-radius: 50%;
       border: solid 3px #EB8E17;
       opacity: 1; }
@@ -105,7 +106,7 @@ body {
   font-family: 'Segeo UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/backgroundPhoto.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -136,7 +137,7 @@ header {
   z-index: 2;
   width: 100%; }
 
-.text-secondary {
+.text-secondaryy {
   color: #EB8E17; }
 
 main {
@@ -178,6 +179,33 @@ main {
     background: #1a1a1a;
     padding: 0.5rem;
     border-bottom: #EB8E17 5px solid; }
+  .about-info .name {
+    padding-bottom: 0.9rem; }
+  .about-info .iconss {
+    color: #EB8E17; }
+  .about-info .float {
+    float: right; }
+  .about-info .about-metu {
+    margin: 0 0 20px 0; }
+  .about-info .name {
+    padding-top: 15px; }
+  .about-info .name-main {
+    margin-bottom: 15px; }
+  .about-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .about-info li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    padding: 8px 0px 1px 13px;
+    text-align: justify;
+    text-justify: inter-word; }
+  .about-info li::before {
+    content: "• ";
+    padding-right: 10px;
+    color: #EB8E17;
+    /* or whatever color you prefer */ }
 
 .projects {
   display: grid;
@@ -185,6 +213,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
+    height: 60%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -217,11 +246,15 @@ main {
 
 .btn-dark {
   background: #1a1a1a;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 .btn-light {
   background: gray;
   color: #fff; }
+  .btn-light p {
+    margin: 0;
+    text-align: center; }
 
 #main-footer {
   text-align: center;
@@ -242,10 +275,13 @@ main {
   main {
     align-items: center;
     text-align: center;
-    font-size: 15px; }
+    font-size: 15px;
+    justify-content: space-between; }
     main .lg-heading {
       line-height: 1.11;
       margin-bottom: 1rem; }
+    main .iconss {
+      align-items: none; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -263,12 +299,23 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portfolio3-small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
+    .about-info .about-metu {
+      display: flex;
+      justify-content: space-between;
+      float: none;
+      margin: 5px 30% 3%; }
+    .about-info .name {
+      padding-top: 15px; }
+    .about-info li {
+      text-align: center; }
+    .about-info li::before {
+      content: ""; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
