@@ -240,18 +240,19 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #EB8E17;
-    color: #000; }
 
 .btn-dark {
   background: #1a1a1a;
   color: #fff;
   text-align: center; }
+  .btn-dark:hover {
+    background: #EB8E17;
+    color: #000; }
 
 .btn-light {
   background: gray;
-  color: #fff; }
+  color: #fff;
+  cursor: default; }
   .btn-light p {
     margin: 0;
     text-align: center; }
